@@ -179,15 +179,6 @@ func ingest_once(db *gorm.DB) {
 		panic(err2.Error())
 	}
 
-	fmt.Println(data.Bitcoin.Usd)
-	fmt.Println(data.Solana.Usd)
-	fmt.Println(data.Ethereum.Usd)
-	fmt.Println(user.Name)
-	fmt.Println(user.ID)
-	fmt.Println(asset_id_by_symbol[0])
-	fmt.Println(asset_id_by_symbol[1])
-	fmt.Println(asset_id_by_symbol[2])
-
 	err3 := db.Transaction(func(tx *gorm.DB) error {
 		btc_transaction := Transaction{
 			TS:       ts,
