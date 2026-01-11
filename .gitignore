@@ -1,0 +1,16 @@
+.DS_Store
+.git/
+.idea/
+*.log
+*.tmp
+*.tmp.*
+*.out
+*.exe
+*.pyc
+*.pdf
+*.zip
+*.rar
+*.torrent
+.env
+*/vendor/
+*/node_modules/
