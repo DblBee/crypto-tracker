@@ -130,7 +130,7 @@ func fecth_prices() (*CoinGeckoResponse, error) {
 
 	client := &http.Client{}
 
-	req, err := http.NewRequest("GET", "https://api.coingecko.com/api/v3/simple/price?vs_currencies=usd&ids=bitcoin,solana", nil)
+	req, err := http.NewRequest("GET", "https://api.coingecko.com/api/v3/simple/price?vs_currencies=usd&ids=bitcoin,solana,ethereum", nil)
 
 	if err != nil {
 		fmt.Print(err.Error())
