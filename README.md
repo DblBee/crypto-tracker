@@ -1,9 +1,16 @@
 #  Build a Real-Time Crypto Tracker with TimescaleDB on Tiger
 
-[https://www.youtube.com/watch?v=GlEaGCMbCpw](https://www.youtube.com/watch?v=GlEaGCMbCpw)
+[Build a Real-Time Crypto Tracker with TimescaleDB](https://www.youtube.com/watch?v=GlEaGCMbCpw)
 
-```go
-go run main.go
+## Docker
+
+Database Up
+```sh
+docker compose up -d
+```
+Database Down
+```sh
+docker compose down
 ```
 
 ## Environment Variables
@@ -19,4 +26,10 @@ PGPORT=
 PGSSLMODE=
 
 COIN_GECKO_API_KEY=
+```
+
+## Run
+
+```go
+go run main.go
 ```
