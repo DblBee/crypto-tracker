@@ -1,0 +1,17 @@
+services:
+  timescale_db:
+    image: timescale/timescaledb-ha:pg18
+    container_name: timescale_db
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=timescale_db
+    ports:
+      - "5432:5432"
+    networks:
+      - db_net
+
+networks:
+  db_net:
+    driver: bridge
