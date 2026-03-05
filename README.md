@@ -1,4 +1,4 @@
-# Build a Real-Time Crypto Tracker with TimescaleDB
+# Real-Time Crypto Tracker with TimescaleDB
 
 [Build a Real-Time Crypto Tracker with TimescaleDB](https://www.youtube.com/watch?v=GlEaGCMbCpw)
 
@@ -29,6 +29,7 @@ docker compose down -v
 Both the backend and frontend use `.env` files. Configure them before running:
 
 **Backend** (`.env` in root):
+
 ```sh
 TIMESCALE_SERVICE_URL=postgres://postgres:password@127.0.0.1:5432/timescale_db
 PGPASSWORD=password
@@ -41,6 +42,7 @@ COIN_GECKO_API_KEY=<your-coingecko-api-key>
 ```
 
 **Frontend** (`.env` in `tiger-tracker-frontend/`):
+
 ```sh
 TIMESCALE_SERVICE_URL=postgres://postgres:password@127.0.0.1:5432/timescale_db?sslmode=disable
 PGPASSWORD=password
@@ -61,6 +63,7 @@ go run main.go
 ```
 
 You should see output like:
+
 ```
 Calling Coin Gecko API...
 API Response as struct {...}
