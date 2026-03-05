@@ -1,4 +1,4 @@
-# Real-Time Crypto Tracker with TimescaleDB
+# Build a Real-Time Crypto Tracker with TimescaleDB
 
 [Build a Real-Time Crypto Tracker with TimescaleDB](https://www.youtube.com/watch?v=GlEaGCMbCpw)
 
