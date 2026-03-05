@@ -30,7 +30,7 @@ Both the backend and frontend use `.env` files. Configure them before running:
 
 **Backend** (`.env` in root):
 ```sh
-TIMESCALE_SERVICE_URL=postgres://postgres:password@127.0.0.1:5432/timescale_db
+TIMESCALE_SERVICE_URL=postgres://postgres:password@localhost:5432/timescale_db
 PGPASSWORD=password
 PGUSER=postgres
 PGDATABASE=timescale_db
@@ -42,7 +42,7 @@ COIN_GECKO_API_KEY=<your-coingecko-api-key>
 
 **Frontend** (`.env` in `tiger-tracker-frontend/`):
 ```sh
-TIMESCALE_SERVICE_URL=postgres://postgres:password@127.0.0.1:5432/timescale_db?sslmode=disable
+TIMESCALE_SERVICE_URL=postgres://postgres:password@localhost:5432/timescale_db?sslmode=disable
 PGPASSWORD=password
 PGUSER=postgres
 PGDATABASE=timescale_db
