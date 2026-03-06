@@ -255,7 +255,7 @@ func main() {
 	seed_reference_data(db)
 
 	for {
-		ingest_once(db)
-		time.Sleep(30 * time.Second)
+ 		ingest_once(db)
+	 	time.Sleep(30 * time.Second)
 	}
 }
